@@ -1,0 +1,12 @@
+shower=OFF
+done
+set pdlabel lhapdf
+set lhaid 325300
+set use_syst False
+set nevents $NEVENT
+set iseed $SEED
+set ptj1min 70
+set ptj2min 50
+set ptj3min 35
+set ht3min 180
+done

@@ -1,0 +1,10 @@
+set run_mode 0
+
+import model sm-no_b_mass
+
+define ferm = j e+ e- mu+ mu- ta+ ta- ve vm vt ve~ vm~ vt~
+
+generate p p > w+ w- $$ t t~, w+ > ferm ferm, w- > ferm ferm
+add process p p > w+ w- j $$ t t~, w+ > ferm ferm, w- > ferm ferm
+
+output proc

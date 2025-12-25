@@ -1,0 +1,12 @@
+set run_mode 0
+
+import model sm-no_b_mass
+
+define ferm = j e+ e- mu+ mu- ta+ ta- ve vm vt ve~ vm~ vt~
+define tq = t t~
+define bq = b b~
+define w = w+ w-
+
+generate p p > t t~ z, (t > b w+, w+ > ferm ferm), (t~ > b~ w-, w- > ferm ferm), z > ferm ferm
+
+output proc
